@@ -1,0 +1,108 @@
+html,body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-image:url("images/bg-pattern-top.svg"),url('images/bg-pattern-bottom.svg');
+ background-position: right 50vw top -50vh, left 50vw bottom -50vh;
+ background-repeat: no-repeat;
+ font-size: 13px;
+ font-family:'Kumbh Sans', sans-serif;
+ color: hsl(0, 0%, 59%);
+ background-color:hsl(229, 23%, 23%);
+ }
+
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+.cardcomponent{
+  width:370px;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color:white;
+  text-align: center;
+ } 
+
+
+.centralimage{
+   position: absolute;
+   border-radius: 50%;
+   border:5px solid white;
+   top:70px;
+   left:130px;
+}
+
+
+
+
+
+
+
+.coloredhead{
+  background-image: url("images/bg-pattern-card.svg");
+  height:120px;  
+}
+
+
+
+.profiledetails{
+  margin:80px 0px 30px;
+ }
+
+.engagementstats span,.profiledetails h1{
+  color: black;
+}
+
+.engagementstats{
+  display: flex;
+  justify-content: space-evenly;
+  padding:7px 0px;
+}
+
+.engagementstats span{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.profiledetails span{
+  font-weight: lighter;
+  padding-left: 15px;
+  color: hsl(0, 0%, 59%);
+}
+
+.profiledetails h1{
+  line-height: 5px;
+  font-size: 20px;
+}
+
+
+@media screen and (width<=375px){
+  html,body {
+  height: 100%;
+  width: 375px;
+}
+
+.cardcomponent{
+  margin: 0px 25px;
+}
+.engagementstats{
+  padding:15px 0px;
+}
+
+ .profiledetails{
+  margin:100px 0px 40px;
+ }
+
+ .coloredhead{
+  background-image:url("images/bg-pattern-card.svg"); 
+  height:150px;  
+}
+}
+
+
